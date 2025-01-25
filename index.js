@@ -8,11 +8,11 @@ import { createSpinner } from "nanospinner";
 import util from "util";
 import { stdout } from "process";
 
-const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
+const sleep = (ms = 1000) => new Promise((r) => setTimeout(r, ms));
 const figletPromise = util.promisify(figlet);
 
 async function welcome() {
-    const data = await figletPromise('Aditya', { font: 'Standard' });
+    const data = await figletPromise('Aditya', { font: 'isometric4', horizontalLayout: 'full' });
     const lines = data.split('\n');
     const width = stdout.columns;
     const centeredText = lines.map(line => line.padStart((width+line.length) / 2)).join('\n')
@@ -36,6 +36,8 @@ async function welcome() {
 
 async function farewell(){
     await sleep();
+    const portfolioLink = `\x1b]8;;https://adityasinghvats.github.io/adix/\x1b\\${chalk.redBright("portfolio")}\x1b]8;;\x1b\\`;
+    console.log(`Checkout my ${portfolioLink} website.`)
     const data = await figletPromise('Good Bye, Sayonara !!');
     console.log(gradient.retro.multiline(data)+'\n');
 }
