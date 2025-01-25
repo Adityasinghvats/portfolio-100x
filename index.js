@@ -6,11 +6,18 @@ import chalkAnimation from 'chalk-animation';
 import figlet from "figlet";
 import { createSpinner } from "nanospinner";
 import util from "util";
+import { stdout } from "process";
 
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 const figletPromise = util.promisify(figlet);
 
 async function welcome() {
+    const data = await figletPromise('Aditya', { font: 'Standard' });
+    const lines = data.split('\n');
+    const width = stdout.columns;
+    const centeredText = lines.map(line => line.padStart((width+line.length) / 2)).join('\n')
+    console.log(gradient.retro.multiline(centeredText)+'\n');
+    await sleep();
     const rainbowTitle = chalkAnimation.rainbow(
         "Welcome to my portfolio, Nice meeting you !!"
     );
