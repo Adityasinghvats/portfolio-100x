@@ -5,4 +5,6 @@
 - In you terminal type `npx adix` and voila , you can meet me virtually and take a look at my work.
 
 # Demo
-![Screenshot 2025-01-22 215149](https://github.com/user-attachments/assets/d23f4c9f-fb96-4fd6-955b-d7c0cb1ebf3a)
+
+- ![Screenshot 2025-01-25 112449](https://github.com/user-attachments/assets/113101ae-6a7f-4358-91e9-9ae70ed04064)
+- ![Screenshot 2025-01-25 112516](https://github.com/user-attachments/assets/594522b3-7db0-4d08-b0cb-090d3013960a)
