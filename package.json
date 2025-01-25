@@ -1,15 +1,20 @@
 {
   "name": "adix",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "adix" : "./index.js"
+    "adix": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["portfolio", "cli", "aditya", "projects"],
+  "keywords": [
+    "portfolio",
+    "cli",
+    "aditya",
+    "projects"
+  ],
   "author": "Aditya Singh",
   "license": "ISC",
   "description": "A CLI tool to showcase Aditya Singh's portfolio",
